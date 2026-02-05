@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Will you accept this rose?</h2>
+
+    <!-- Screen 1 -->
+    <div id="screen1">
+      <img class="hero" src="me_with_rose.jpg" alt="Me with a rose" />
+      <p class="sub">No gifts. Just me… and this one question 🌹</p>
+
+      <div class="btnRow">
+        <button id="yesBtn" class="yes">Yes ❤️</button>
+        <button id="noBtn" class="no">No 🙈</button>
+      </div>
+    </div>
+
+    <!-- Screen 2 -->
+    <div id="screen2" class="hidden">
+      <img class="hero" src="bouquet.jpg" alt="Bouquet of roses" />
+      <h3>Yayyy ❤️</h3>
+      <p class="sub">Okay… then it’s official. You’re my favorite person.</p>
+
+      <!-- Rain layer -->
+      <div id="rain"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
