@@ -150,7 +150,7 @@ body{
   transform: translateY(-50%) scale(1);
 }
 .left-side{ left:calc(50% - 750px); }
-.right-side{ right:calc(40% - 620px); font-size:clamp(50px, 10vw, 90px); }
+.right-side{ right:calc(40% - 600px); font-size:clamp(50px, 10vw, 90px); }
 
 .modal{
   position:fixed;
