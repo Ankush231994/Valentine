@@ -6,6 +6,9 @@
   <title>Rose Day</title>
   <link rel="preload" as="image" href="assets/rose_start.jpeg" />
   <link rel="preload" as="video" href="assets/rose_offer.mp4" type="video/mp4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,11 +27,33 @@
 
     <canvas id="fxCanvas" class="fx-canvas" aria-hidden="true"></canvas>
 
-    <div class="cta-layer" id="ctaLayer">
-      <button id="yesBtn" class="cta-btn" type="button">Yes ❤️</button>
+    <div class="side-text left-side" aria-hidden="true">
+      <div>HAPPY</div>
+      <div>ROSE</div>
+      <div>DAY</div>
+    </div>
+    <div class="side-text right-side" aria-hidden="true">
+      <div>I</div>
+      <div>LOVE</div>
+      <div>YOU</div>
+      <div>BABE</div>
+      <div>❤️</div>
     </div>
 
-    <div id="textOverlay" class="text-overlay">HAPPY ROSE DAY 🌹</div>
+    <div class="cta-layer" id="ctaLayer">
+      <div class="cta-helper">Click on “Yes” to accept the roses 🌹</div>
+      <div class="cta-wrap">
+        <button id="yesBtn" class="cta-btn" type="button">Yes ❤️</button>
+        <button id="noBtn" class="cta-btn cta-no" type="button">No</button>
+      </div>
+    </div>
+
+    <div id="noModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="noModalTitle">
+      <div class="modalCard">
+        <h3 id="noModalTitle">We both know it’s yes.</h3>
+        <button id="noOkBtn" class="cta-btn" type="button">OK</button>
+      </div>
+    </div>
   </main>
 
   <script src="script.js"></script>
