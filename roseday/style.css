@@ -149,8 +149,8 @@ body{
   opacity:1;
   transform: translateY(-50%) scale(1);
 }
-.left-side{ left:calc(50% - 700px); }
-.right-side{ right:calc(50% - 700px); }
+.left-side{ left:calc(50% - 640px); }
+.right-side{ right:calc(50% - 640px); }
 
 .modal{
   position:fixed;
