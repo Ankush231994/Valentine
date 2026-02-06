@@ -139,7 +139,7 @@ body{
   text-align:center;
   letter-spacing:.6px;
   text-shadow: 0 4px 12px rgba(0,0,0,.35);
-  font-size:clamp(72px, 12vw, 136px);
+  font-size:clamp(70px, 12vw, 134px);
   line-height:1.15;
   pointer-events:none;
   opacity:0;
@@ -149,8 +149,8 @@ body{
   opacity:1;
   transform: translateY(-50%) scale(1);
 }
-.left-side{ left:calc(50% - 560px); }
-.right-side{ right:calc(50% - 560px); }
+.left-side{ left:calc(50% - 640px); }
+.right-side{ right:calc(50% - 640px); }
 
 .modal{
   position:fixed;
