@@ -1,34 +1,35 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rose Day</title>
+  <link rel="preload" as="image" href="assets/rose_start.jpeg" />
+  <link rel="preload" as="video" href="assets/rose_offer.mp4" type="video/mp4" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="card">
-    <h2>Will you accept this rose?</h2>
-
-    <!-- Screen 1 -->
-    <div id="screen1">
-      <img class="hero" src="me_with_rose.jpg" alt="Me with a rose" />
-      <p class="sub">No gifts. Just me… and this one question 🌹</p>
-
-      <div class="btnRow">
-        <button id="yesBtn" class="yes">Yes ❤️</button>
-        <button id="noBtn" class="no">No 🙈</button>
-      </div>
+  <main class="app">
+    <div class="media-layer">
+      <img id="startImage" class="media media-image" src="assets/rose_start.jpeg" alt="Man holding a bouquet" />
+      <video
+        id="offerVideo"
+        class="media media-video"
+        muted
+        playsinline
+        preload="auto"
+      ></video>
+      <div class="media-overlay"></div>
     </div>
 
-    <!-- Screen 2 -->
-    <div id="screen2" class="hidden">
-      <img class="hero" src="bouquet.jpg" alt="Bouquet of roses" />
-      <h3>Yayyy ❤️</h3>
-      <p class="sub">Okay… then it’s official. You’re my favorite person.</p>
+    <canvas id="fxCanvas" class="fx-canvas" aria-hidden="true"></canvas>
 
-      <!-- Rain layer -->
-      <div id="rain"></div>
+    <div class="cta-layer" id="ctaLayer">
+      <button id="yesBtn" class="cta-btn" type="button">Yes ❤️</button>
     </div>
-  </div>
+
+    <div id="textOverlay" class="text-overlay">HAPPY ROSE DAY 🌹</div>
+  </main>
 
   <script src="script.js"></script>
 </body>
